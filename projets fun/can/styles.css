@@ -1,0 +1,101 @@
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #999;
+    font-family: sans-serif;
+}
+.contenair
+{
+    width: 80%;
+    height: 62vh;
+    background-color :#555;
+    border-radius: 10px;
+    padding: 20px;
+    border: 5px solid #fff;
+}
+.top
+{
+    display: flex;
+}
+.me
+{
+    color: #fff;
+    font-size: 1.3rem;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.flag
+{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    width: 200px;
+    height: 100px;
+}
+.orange
+{
+    background-color: orangered;
+}
+.white
+{
+    background-color: white;
+}
+.lime
+{
+    background-color: lime;
+}
+.bottom
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.item
+{
+    background-color: #fff;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.item p
+{
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+button
+{
+    width: 65px;
+    height: 30px;
+    padding:3px 3px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #777;
+    transition: all 0.5s;
+}
+button span
+{
+    display: block;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+.lime
+{
+    background-color: lime;
+}
+.lime .span1,
+.lime .span2,
+.lime .span3,
+.lime .span4,
+.lime .span5
+{
+    margin-left: 34px;
+    transition: all 0.5s;
+}

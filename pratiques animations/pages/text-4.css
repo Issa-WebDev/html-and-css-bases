@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #000;
+}
+.content
+{
+    position: relative;
+}
+.content h2
+{
+    position: absolute;
+    font-size: 8em;
+    top: 0;
+    transition:translate(-50% , 50%);
+}
+.content h2:nth-child(1)
+{
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2)
+{
+    color: #03a9f4;
+    animation: animate 6s ease-in-out infinite;
+}
+
+@keyframes animate
+{
+    0%, 10%, 40%, 68%, 70%, 100%
+    {
+        clip-path: polygon(32% 57%, 72% 52%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 3% 73%);
+    }
+    50%, 70%, 80%, 90%, 100%
+    {
+        clip-path: polygon(31% 61%, 64% 65%, 93% 84%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 48%);
+    }
+}
+

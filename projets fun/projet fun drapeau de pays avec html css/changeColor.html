@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="changeColor.css">
+    <title>Change Color of Boxes</title>
+</head>
+<body>
+    <div class="flag">
+       <div class="flag-color color1"></div>
+       <div class="flag-color color2"></div>
+       <div class="flag-color color3"></div>
+    </div>
+    <h1 class="moi">NAVARO 2.0</h1>
+    <h1 class="drap">DRAPEAUX</h1>
+    <div class="box-color">
+        <p>Côte D'Ivoire</p>
+        
+        <button class="btn1">
+            <span class="orange"></span>
+        </button>
+
+        <button class="btn2">
+            <span class="blanc"></span>
+        </button>
+
+        <button class="btn3">
+            <span class="vert"></span>
+        </button>
+
+        <p>Mali</p>
+        <button class="btn4">
+            <span class="verte"></span>
+        </button>
+
+        <button class="btn5">
+            <span class="jaune"></span>
+        </button>
+
+        <button class="btn6">
+            <span class="rouge"></span>
+        </button>
+    </div>
+
+    <script>
+
+        const color1 = document.querySelector('.color1')
+        const color2= document.querySelector('.color2')
+        const color3 = document.querySelector('.color3')
+        const btn1 = document.querySelector('.btn1')
+        const btn2 = document.querySelector('.btn2')
+        const btn3 = document.querySelector('.btn3')
+        const btn4 = document.querySelector('.btn4')
+        const btn5 = document.querySelector('.btn5')
+        const btn6 = document.querySelector('.btn6')
+
+        const orange = document.querySelector('.orange')
+        const blanc = document.querySelector('.blanc')
+        const vert = document.querySelector('.vert')
+
+        const verte = document.querySelector('.verte')
+        const jaune = document.querySelector('.jaune')
+        const rouge = document.querySelector('.rouge')
+
+        orange.addEventListener('click', () => {
+            color1.classList.toggle('oranged')
+            btn1.classList.toggle('move-o')
+        })
+
+        blanc.addEventListener('click', () => {
+            color2.classList.toggle('white')
+            btn2.classList.toggle('move-w')
+        })
+
+        vert.addEventListener('click', () => {
+            color3.classList.toggle('green')
+            btn3.classList.toggle('move-g')
+        })
+
+
+        verte.addEventListener('click', () => {
+            color1.classList.toggle('green2')
+            btn4.classList.toggle('move-g2')
+        })
+        jaune.addEventListener('click', () => {
+            color2.classList.toggle('yellow')
+            btn5.classList.toggle('move-y')
+        })
+        rouge.addEventListener('click', () => {
+            color3.classList.toggle('red')
+            btn6.classList.toggle('move-r')
+        })
+
+
+    </script>
+</body>
+</html>

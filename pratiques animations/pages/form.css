@@ -1,0 +1,206 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body
+{
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box
+{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    overflow: hidden;
+}
+.box::before
+{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent,transparent, violet,violet,violet);
+    animation: animate 4s linear infinite;
+    transform-origin: bottom right;
+}
+.box::after
+{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent,transparent, violet,violet,violet);
+    animation: animate 4s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -2s;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.box2
+{
+    position: relative;
+    inset: 0;
+    width: 380px;
+    height: 420px;
+
+}
+.box2::before
+{
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent,transparent, skyblue, skyblue, skyblue);
+    animation: animate 4s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -1s;
+}
+.box2::after
+{
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent,transparent,skyblue, skyblue, skyblue);
+    animation: animate 4s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -3s;
+}
+.box form
+{
+    position: absolute;
+    inset: 5px;
+    border: none;
+    /* border-radius: 8px; */
+    background-color: #111;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+.box form h1
+{
+    color: #fff;
+    font-weight: 400px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-align: center;
+}
+.box form .inputbox
+{
+    position: relative;
+    width: 300px;
+    padding-top: 40px;
+}
+.box form .inputbox input
+{
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    background-color:transparent;
+}
+.box form .inputbox span
+{
+    color: gainsboro;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    letter-spacing: 1px;
+    /* z-index: 2px; */
+    transition: 0.5s;
+    font-weight: bold;
+}
+.box form .inputbox input:valid ~ span,
+.box form .inputbox input:focus ~ span
+{
+    color: violet;
+    font-size: 14px;
+    transform: translateY(-37px);
+}
+.box form .inputbox i
+{
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border: none;
+    border-radius: 4px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.box form .inputbox input:valid ~ i,
+.box form .inputbox input:focus ~ i
+{
+    height: 37px;
+}
+.links
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 0;
+}
+.links a
+{
+    color: white;
+    transition: 0.5s;
+    
+}
+.links a:hover
+{
+    color: violet;
+}
+input[type="submit"]
+{
+    width: 35%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+    background: violet;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+input[type="submit"]:hover
+{
+    border: 2px solid violet;
+    color: #fff;
+    background: transparent;
+}

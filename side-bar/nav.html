@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <title>nav bar</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>LOGO</h1>
+            <span>|||</span>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Article</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+
+        const links = document.querySelector('.links')
+        const span = document.querySelector('span')
+
+        span.addEventListener("click", () => {
+	        links.classList.toggle("mobile-menu");
+        });
+        
+    </script>
+</body>
+
+</html>

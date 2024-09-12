@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadre multiple</title>
+</head>
+<body>
+    <div class="contenair">
+        <div class="box-1">
+            <div class="box-2">
+                <div class="box-3">
+                    <div class="box-4">
+                        <div class="box-5">
+                            <div class="box-6">
+                                <div class="box-7">
+                                    <div id="box-image">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="photos">
+        <button id="img1">
+            <img src="reb-ball-design.jpg" alt="">
+        </button>
+        <button id="img2">
+            <img src="revendication.jpg" alt="">
+        </button>
+        <button id="img3">
+            <img src="student on bike.jpg" alt="">
+        </button>
+    </div>
+
+    <script>
+        const boxImage = document.getElementById('box-image')
+        const img1 = document.getElementById('img1')
+        const img2 = document.getElementById('img2')
+        const img3 = document.getElementById('img3')
+
+
+        img1.addEventListener('click', () => {
+            boxImage.classList.toggle('back-img1')
+        })
+
+        img2.addEventListener('click', () => {
+            boxImage.classList.toggle('back-img2')
+        })
+
+        img3.addEventListener('click', () => {
+            boxImage.classList.toggle('back-img3')
+        })
+    </script>
+</body>
+</html>

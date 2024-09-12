@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.contenair{
+    width: 100%;
+    height: 100vh;
+    /* overflow-y: scroll; */
+    /* scroll-snap-type:y mandatory; */
+}
+.photo{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+    background: linear-gradient(45deg, blue ,violet);
+    /* scroll-snap-align: start; */
+}
+.photo img{
+    width: 700px;
+}
+.photo h1{
+    font-size: 70px;
+    font-family: serif;
+    font-weight: 600;
+    margin-right: 200px;
+    
+}
+.photo1{
+    background: linear-gradient(45deg, blue ,violet);
+    height:100vh;
+}
+.photo2{
+    background: linear-gradient(45deg, lime,violet);
+    height:100vh;
+}
+.photo3{
+    background: linear-gradient(45deg, green ,violet);
+    height:100vh;
+}

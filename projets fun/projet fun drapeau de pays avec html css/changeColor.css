@@ -1,0 +1,174 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nunito, sans-serif;
+}
+@font-face {
+    font-family: nunito;
+    src: url(fonts/Nunito-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: nunito;
+    src: url(fonts/Nunito-Regular.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: nunito;
+    src: url(fonts/Nunito-Light.ttf);
+    font-weight: 400;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    height: 100vh;
+}
+.moi
+{
+    position: absolute;
+    color: #fff;
+    font-size: 2.2rem;
+    transform: translate(-68px , 180px);
+    /* text-decoration: underline; */
+}
+.drap
+{
+    position: absolute;
+    color: #fff;
+    transform: translate(-80px , -165px);
+    border: 1px solid #fff;
+    font-size: 3rem;
+    width: 300px;
+    padding: 0 10px;
+    background-color: #222;
+}
+p
+{
+    color: #fff;
+    margin: 20px 0 20px 0;
+    border: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+}
+.flag
+{
+    background-color: #222;
+    display: grid;
+    width: 300px;
+    height: 200px;
+    grid-template-columns: repeat(3 , 1fr);
+}
+.flag::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background: saddlebrown;
+    transform: translate(0 , 200px);
+}
+.flag-color
+{
+    border:  1px solid #fff;
+    transition: 0.5s;
+}
+.box-color
+{
+    width: 120px;
+    height: 400px;
+    background: #222;
+    margin-left: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:  1px solid #fff;
+}
+button
+{
+    width: 40px;
+    height: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    background: #333;
+    transition: border 0.5s;
+}
+span
+{
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.orange,
+.oranged
+{
+    background-color: orangered;
+}
+.blanc,
+.white
+{
+    background-color: white;
+}
+.vert,
+.green,
+.verte,
+.green2
+{
+    background-color: green;
+}
+.jaune,
+.yellow
+{
+    background-color: yellow;
+}
+.rouge,
+.red
+{
+    background-color: red;
+}
+.move-o .orange,
+.move-w .blanc,
+.move-g .vert,
+.move-g2 .verte,
+.move-y .jaune,
+.move-r .rouge
+{
+    margin-left: 20px;
+}
+.move-o
+{
+    border: 1px solid orangered;
+}
+.move-w
+{
+    border: 1px solid white;
+}
+.move-g
+{
+    border: 1px solid green;
+}
+.move-g2
+{
+    border: 1px solid green;
+}
+.move-y
+{
+    border: 1px solid yellow;
+}
+.move-r
+{
+    border: 1px solid red;
+}

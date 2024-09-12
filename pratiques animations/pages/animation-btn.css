@@ -1,0 +1,123 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+}
+.btn
+{
+    width: 200px;
+    height: 70px;
+    background: pink;
+    color: white;
+    border: 10px solid palevioletred;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    /* transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s ; */
+
+    transition: all 0.3s ease 0s;
+}
+.btn:hover
+{
+    transform: translateY(-10px);
+    /* background: var(--clr-accent);
+    il hérite de la couleur du body ou du parent */
+    background: violet;
+    color: var(--clr-light);
+}
+h1
+{
+    margin: 40px 0 0 0;
+    color: white;
+    /* animation-name: slideinleft; */
+    /* animation-duration: 1s; */
+    /* animation-timing-function:ease-in ; */
+    /* animation-delay: 1; */
+    /* animation-iteration-count: 1 ; infinite */
+     /* animation-direction: normal;reverse */
+    /* animation-fill-mode:none, fowards,  ;  */
+
+    animation: bounce 0.3s ease-in 1 normal none ;
+    /* animation: rotate 1s ease-in infinite normal none ;  */
+    /* animation: slideinleft 1s ease-in infinite normal none ;  */
+    /* animation: animate 0.3s ease-in 1 normal none ; */
+    /* transform-origin: bottom left;  */
+   
+
+    /* transform: translateX(-50px); */
+}
+@keyframes slideinleft
+{
+    from
+    {
+        transform: translateX(-300px);
+    }
+    to
+    {
+        transform: translateX(0);
+    }
+}
+@keyframes rotate
+{
+    from
+    {
+        transform: rotate(360deg);
+    }
+    to
+    {
+        transform: rotate(0deg);
+    }
+}
+@keyframes bounce
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    20%
+    {
+        transform: translateY(0);
+    }
+    0%
+    {
+        transform: translateY(-30px);
+    }
+     50%
+    {
+        transform: translateY(0);
+    }
+     60%
+    {
+        transform: translateY(-15);
+    }
+    80%
+    {
+        transform: translateY(0);
+    }
+    90%
+    {
+        transform: translateY(0);
+    }
+    100%
+    {
+        transform: translateY(-30px);
+    }
+}
+
+
+/* <<<<<<<<<<<    I'M HAPPY WORLD     >>>>>>>>>>>>>>
+   <<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>> */

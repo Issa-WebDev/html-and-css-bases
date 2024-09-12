@@ -1,0 +1,105 @@
+.color{
+    color:black;
+}
+h1{
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 20%;
+    background: gainsboro;
+    font-family: verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+}
+h1:hover{
+    background: skyblue;
+    cursor: pointer;
+}
+.conteneur{
+    margin:0 auto;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    width: 20%;
+    min-height: 70vh;
+    background: gainsboro;
+    padding-left: 0px;
+
+}
+.conteneur:hover{
+    background: gainsboro;
+    cursor: pointer;
+}
+.input0:hover{
+    background: skyblue;
+    cursor: pointer;
+}
+.input0{
+    width: 60px;
+    height: 60px;
+    background: gray;
+    border: none;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.input:hover{
+   background: rgb(247, 134, 93);
+   cursor: pointer;
+}
+
+.input1{
+    width: 60px;
+    height: 60px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.input1:hover{
+    background: skyblue;
+    cursor: pointer;
+}
+.input00{
+    width: 120px;
+    height: 60px;
+    background: black;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    padding: 15px;
+
+}
+.input00:hover{
+    background: skyblue;
+    cursor: pointer;
+}
+.input{
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.resultat{
+    width: 72%;
+    height: 10vh;
+    text-align: right;
+    font-weight: bold;
+    border: 1px solid gainsboro;
+    color: white;
+    font-size: 30px;
+    background:gainsboro ;
+    margin-top: 20px;
+}

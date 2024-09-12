@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Restaurant la navaro</title>
+    <style>
+      *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #111;
+}
+form
+{
+    background-color: transparent;
+    border-radius: 50px;
+    width: 45%;
+    padding: 40px;
+    border: 5px solid #2be4fd;
+    box-shadow: 1px 3px 100px #2be4fd;
+}
+form .btn
+{
+    width: 12%;
+    height: 12%;
+    background-color: #111;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50px;
+    outline: none;
+    margin: 10px;
+    border: 5px solid #2be4fd;
+    transition: all .5s ease 0s;
+    box-shadow: 1px 3px 10px #2be4fd;
+    text-align: center;
+}
+form .btn:hover
+{
+    background-color: #2be4fd;
+    box-shadow: 1px 3px 20px #2be4fd;
+}
+form .btn:active
+{
+    box-shadow: 1px 3px 50px #2be4fd;
+}
+form .resultat
+{
+    width: 28%;
+    height: 12%;
+    outline: none;
+    background-color: #111;
+    color: #2be4fd;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius:50px;
+    padding:0 20px;
+    border: 5px solid #2be4fd;
+    box-shadow: 1px 3px 10px #2be4fd;
+    transition: all .5s ease 0s;
+    margin-left: 10px;
+}
+form .resultat::placeholder
+{
+    color: #2be4fd;
+}
+form .resultat:hover
+{
+    box-shadow: 1px 3px 50px #2be4fd;
+}
+h1
+{
+    text-align: center;
+    font-size: 5rem;
+    color: #222;
+    -webkit-text-stroke: 4px #2be4fd;
+    text-shadow: 1px 3px 20px #2be4fd;
+}
+    </style>
+</head>
+<body>
+
+    <h1>Navaro 2.0</h1>
+  <form action="post" name="calculatrice">
+    
+    <input type="reset" class="btn" value="AC">
+    <input type="button" class="btn" value="0" onclick="document.calculatrice.usb.value+='0'">
+    <input type="button"  class="btn" value="1" onclick="document.calculatrice.usb.value+='1'">
+    <input type="button" class="btn" value="2" onclick="document.calculatrice.usb.value+='2'">
+    <input type="button" class="btn" value="3" onclick="document.calculatrice.usb.value+='3'">
+    <input type="button" class="btn" value="4" onclick="document.calculatrice.usb.value+='4'">
+    <input type="button" class="btn" value="5" onclick="document.calculatrice.usb.value+='5'">
+    <input type="button" class="btn" value="6" onclick="document.calculatrice.usb.value+='6'">
+    <input type="button" class="btn" value="7" onclick="document.calculatrice.usb.value+='7'">
+    <input type="button" class="btn" value="8" onclick="document.calculatrice.usb.value+='8'">
+    <input type="button" class="btn" value="9" onclick="document.calculatrice.usb.value+='9'">
+    <input type="button" class="btn" value="+" onclick="document.calculatrice.usb.value+='+'">
+    <input type="button" class="btn" value="-" onclick="document.calculatrice.usb.value+='-'">
+    <input type="button" class="btn" value="/" onclick="document.calculatrice.usb.value+='/'">
+    <input type="button" class="btn" value="*" onclick="document.calculatrice.usb.value+='*'">
+    <input type="button" class="btn" value="=" onclick="document.calculatrice.usb.value=eval(document.calculatrice.usb.value)">
+    <input type=" text" class="resultat" name="usb" placeholder="Calculer...............">
+  </form>
+</body>
+</html>
